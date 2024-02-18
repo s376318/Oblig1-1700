@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestilling</title>
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+<table>
+    <tr>
+        <td>Velg film</td>
+        <td><select id="velgFilm">
+            <option value="">Velg film her</option>
+
+            <option value=">Now You See Me">Now You See Me</option>
+            <option value="Rush">Rush</option>
+            <option value="21">21</option>
+
+        </select>
+        </td>
+        <td id="feilValg" style="color: red"></td>
+    </tr>
+
+    <tr>
+        <td>Antall Bilett</td>
+        <td><input type="text" size="1px" style="width: 40px" id="tall"></td>
+        <td id="feilTall" style="color: red" ></td>
+    </tr>
+
+    <tr>
+        <td>Fornavn</td>
+        <td><input type="text" id="forNavn"></td>
+        <td id="feilNavn" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>Etternavn</td>
+        <td><input type="text" id="etterNavn"></td>
+        <td id="feilEtternavn" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>Telefonnr</td>
+        <td><input type="text" id="telefonNr"></td>
+        <td id="feilTlfNr" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>Epost</td>
+        <td><input type="text" id="epost"></td>
+        <td id="feilEpost" style="color: red"></td>
+    </tr>
+</table>
+<button onclick="kjop()">Kjøp billett</button>
+
+<h2>Alle billetter</h2>
+<div id="kjopBillett"></div>
+
+<button onclick="slett()">Slett alle billettene</button>
+<div id="slett"></div>
+</body>
+</html>
